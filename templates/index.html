@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Anomaly Detection</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .anomaly {
+            color: red;
+            font-weight: bold;
+        }
+        .normal {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🚀 API Monitoring Dashboard</h1>
+
+<table>
+    <tr>
+        <th>Traffic Value</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+
+    {% for value, status, action in results %}
+    <tr>
+        <td>{{ value }}</td>
+        <td class="{{ 'anomaly' if status == 'Anomaly' else 'normal' }}">
+            {{ status }}
+        </td>
+        <td>{{ action }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
