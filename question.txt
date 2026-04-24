@@ -1,0 +1,68 @@
+Problem Statement
+
+AI-Based API Anomaly Detection and Self-Healing System
+Background
+
+Modern applications heavily rely on APIs (Application Programming Interfaces) to communicate between services. As systems grow more complex and distributed, APIs become critical points of dependency—and failure.
+
+Ensuring reliability, performance, and security of APIs is essential for maintaining seamless user experiences.
+
+Objective
+
+Design and develop an AI-based system that can:
+
+Continuously monitor API behavior and performance
+
+Detect anomalies using behavioral and time-series analysis
+
+Automatically initiate self-healing actions to maintain system stability
+
+Key Requirements
+
+Your solution should:
+
+🧠 Identify both obvious and subtle anomalies in API usage
+
+⚡ Operate in real time or near real time
+
+🔄 Trigger automated responses such as:
+
+Rate limiting
+
+Fallback routing
+
+Service isolation
+
+📊 Handle large-scale API traffic efficiently
+
+🔐 Enhance both system reliability and security
+
+Problem Context
+
+APIs are vulnerable to various issues, including:
+
+📈 Abnormal traffic spikes (intentional or accidental)
+
+⏱️ Latency anomalies affecting performance
+
+🔗 Broken dependencies between services
+
+🛑 Malicious or abnormal API usage patterns
+
+Key challenges include:
+
+⚠️ Traditional systems rely on static thresholds, missing subtle anomalies
+
+🧠 Limited ability to detect behavioral or time-series deviations
+
+⏱️ Heavy dependence on manual intervention for issue resolution
+
+🔄 Slow response to real-time failures or attacks
+
+As a result:
+
+🚫 Services may experience downtime
+
+📉 Performance degradation impacts user experience
+
+🔐 Security vulnerabilities may go undetected
